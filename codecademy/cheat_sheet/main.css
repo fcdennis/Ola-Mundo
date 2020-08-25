@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Inconsolata:wght@300;500;900&family=Roboto:wght@300;500;900&display=swap');
+/* 
+font-family: 'Concert One', cursive;
+font-family: 'Inconsolata', monospace;
+font-family: 'Roboto', sans-serif;
+*/
+
+:root {
+    --color-p: #0000ff;
+    --color-table-border: #5A5A5A;
+    font-size: 60%; /*rem control size*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width:  100vw;
+}
+
+.tag {
+    color: var(--color-p);
+}
+
+table {
+    border: 1px solid var(--color-table-border)
+}
+
+td {
+    border:  1px dotted var(--color-table-border);
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheat Sheet</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <header id="main">
+    <h1>Cheat Sheet - A fast reference guide</h1>
+  </header>
+  <nav>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>C</li>
+    </ul>
+  </nav>
+  <section id="html"> 
+    <header>
+      <h2>HTML</h2>
+      <h3>Elements</h3>
+    </header>
+    <table>
+    <thead>
+      <tr>
+        <th>Tag</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Atributes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tag">&lt;DOCTYPE&gt;</td>
+        <td>!DOCTYPE</td>
+        <td><p>All HTML documents must start with a &lt;!DOCTYPE&gt; declaration.</p><p>The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.</p></td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td class="tag"> &lt;HTML&gt;</td>
+        <td>HTML</td>
+        <td><p>The &lt;html&gt; tag represents the root of an HTML document.</p><p>The &lt;html&gt; tag is the container for all other HTML elements (except for the &lt;!DOCTYPE&gt; tag).</p></td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td class="class" colspan="4">Metadata Content</td>
+      </tr>
+      <tr>      
+        <td class="class_description" colspan="4">Os elementos pertencentes a categoria conteúdo de metadados modificam a apresentação ou o comportamento do resto do documento, define ligações para outros documentos ou transmite outras informações fora da banda.</td>
+      </tr>
+      <tr>
+        <td class="tag">&lt;base&gt;</td>
+        <td>Base</td>
+        <td><p>The &lt;base&gt; tag specifies the base URL and/or target for all relative URLs in a document.</p><p>The &lt;base&gt; tag must have either an href or a target attribute present, or both.</p><p>There can only be one single &lt;base&gt; element in a document, and it must be inside the &lt;head&gt; element.</p></td>
+        <td>hfer, target</td>
+      </tr>
+      <tr>
+        <td class="tag">&lt;link&gt;</td>
+        <td>Link</td>
+        <td><p>The &lt;link&gt; tag defines the relationship between the current document and an external resource.</p><p>The &lt;link&gt; tag is most often used to link to external style sheets.</p><p>The &lt;link&gt; element is an empty element, it contains attributes only.</p></td>
+        <td>crossorigin, href, hreflang, media, referrerpolicy, rel, sizes, title, type</td>
+      </tr>
+      <tr>
+      <td class="class" colspan="4">Sectioning Content</td>
+      </tr>
+      <tr>
+      <td class="class_description" colspan="4">Os elementos pertencentes ao modelo de conteúdo de seccionamento criam uma seção no esboço atual que define o escopo dos elementos &lt;header&gt;, elementos &lt;footer&gt; e na conteúdo do cabeçalho.</td>
+    </tr>
+    <tr>
+      <td class="tag">&lt;header&gt;</td>
+      <td>Header</td>
+      <td><p>&lt;header&gt; element represents a container for introductory content or a set of navigational links.</p> <p> &lt;header&gt; element typically contains: one or more heading elements (&lt;h1&gt; - &lt;h6&gt;) / logo or icon / authorship information.</p><p>Note: You can have several &lt;header&gt; elements in one HTML document. However, &lt;header&gt; cannot be placed within a &lt;footer&gt;, &lt;address&gt; or another &lt;header&gt; element.</p></td>
+      <td>Global</td>
+    </tr>
+    </tbody>
+    </table>
+  </section>
+</body>
+
+</html>
