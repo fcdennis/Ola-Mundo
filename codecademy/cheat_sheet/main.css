@@ -6,7 +6,10 @@ font-family: 'Roboto', sans-serif;
 */
 
 :root {
-    --color-p: #0000ff;
+    --color-link: #0000ff;
+    --color-title-main: #FF00FF;
+    --color-title-secondary: #FA11F0;
+    --color-description: #334433;
     --color-table-border: #5A5A5A;
     font-size: 60%; /*rem control size*/
 }
@@ -20,16 +23,74 @@ font-family: 'Roboto', sans-serif;
 html,
 body {
     width:  100vw;
-}
-
-.tag {
-    color: var(--color-p);
+    background-image: url("https://previews.123rf.com/images/kittikornphongok/kittikornphongok1505/kittikornphongok150501283/40020453-colorful-watercolor-grunge-texture-background-soft-background-.jpg");
 }
 
 table {
-    border: 1px solid var(--color-table-border)
+    width: 90%;
+    margin: auto;
+    border: 1px solid var(--color-table-border);
+    font-family: 'Roboto', sans-serif;
 }
 
 td {
     border:  1px dotted var(--color-table-border);
+    font-size: 1.5rem;
+    padding: 2px;
+}
+
+th{
+    font-family: 'Inconsolata', monospace;
+    font-size: 2.5rem;
+    border: 1.5px double var(--color-table-border);
+}
+
+.section_title {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+.section_title h2 {
+    font-size: 2.5rem;
+    color: var(--color-title-main);
+}
+
+.section_title h3{
+    font-size: 2.5rem;
+    color: var(--color-title-main);
+}
+
+
+.tag {
+    color: var(--color-link);
+    text-align: center;
+}
+
+.class {
+    color:  var(--color-title-secondary);
+    text-align: center;
+    font-size: 2rem;
+    border: 1.5px dashed var(--color-table-border);
+}
+
+.class_description {
+    text-align: justify;
+    font-size:  1.5rem;
+    color:  var(--color-description);
+    border: 1.25px solid var(--color-table-border);
+    padding: 3px;
+}
+
+.css_values {
+    list-style-position: inside;
+}
+
+#nav_header {
+    font-family: 'Concert One', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#menu li{
+    display: inline;
 }

@@ -9,20 +9,20 @@
 </head>
 
 <body>
-  <header id="main">
-    <h1>Cheat Sheet - A fast reference guide</h1>
-  </header>
-  <nav>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>C</li>
+  <nav id="nav_header">
+    <header id="main">
+      <h1>Cheat Sheet - A fast reference guide</h1>
+    </header>
+    <ul id="menu">
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#javascript">JavaScript</a></li>
+      <li><a href="#python">Python</a></li>
+      <li><a href="#c">C</a></li>
     </ul>
   </nav>
   <section id="html"> 
-    <header>
+    <header class="section_title">
       <h2>HTML</h2>
       <h3>Elements</h3>
     </header>
@@ -37,7 +37,7 @@
     </thead>
     <tbody>
       <tr>
-        <td class="tag">&lt;DOCTYPE&gt;</td>
+        <td class="tag">&lt;!DOCTYPE&gt;</td>
         <td>!DOCTYPE</td>
         <td><p>All HTML documents must start with a &lt;!DOCTYPE&gt; declaration.</p><p>The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.</p></td>
         <td>None</td>
@@ -79,6 +79,183 @@
       <td>Global</td>
     </tr>
     </tbody>
+    </table>
+  </section>
+  <section id="css">
+    <header class="section_title">
+      <h2>CSS</h2>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Properties</th>
+          <th>Description</th>
+          <th>Values</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Border</td>
+          <td>The CSS border properties allow you to specify the style, width, and color of an element's border.</td>
+          <td class="css_values"><ul>
+            <li>dotted</li>
+            <li>dashed</li>
+            <li>solid</li>
+            <li>double</li>
+            <li>groove</li>
+            <li>ridge</li>
+            <li>inset</li>
+            <li>outset</li>
+            <li>none</li>
+            <li>hidden</li>
+          </ul></td>
+        </tr>
+      </tbody>
+
+    </table>
+  </section>
+  <section id="javascript">
+    <header class="section_title">
+      <h2>JavaScript</h2>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Operators</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tr>
+        <td class="class" colspan="2">Arithmetc Operators</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td>Addition</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>Subtraction</td>
+      </tr>
+    <tr>
+      <td>*</td>
+      <td>Multiplication</td>
+    </tr>
+    <tr>
+      <td>**</td>
+      <td>Exponentiation</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Division</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>Modulus</td>
+    </tr>
+    <tr>
+      <td>++</td>
+      <td>Increment</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>Decrement</td>
+    </tr>
+    </table>
+  </section>
+  <section id="python">
+    <header class="section_title">
+      <h2>Python</h2>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Operators</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tr>
+        <td class="class" colspan="2">Arithmetc Operators</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td>Addition</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>Subtraction</td>
+      </tr>
+    <tr>
+      <td>*</td>
+      <td>Multiplication</td>
+    </tr>
+    <tr>
+      <td>**</td>
+      <td>Exponentiation</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Division</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>Modulus</td>
+    </tr>
+    <tr>
+      <td>++</td>
+      <td>Increment</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>Decrement</td>
+    </tr>
+    </table>
+  </section>
+  <section id="c">
+    <header class="section_title">
+      <h2>C</h2>
+    </header>
+    <table>
+      <thead>
+        <tr>
+          <th>Operators</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tr>
+        <td class="class" colspan="2">Arithmetc Operators</td>
+      </tr>
+      <tr>
+        <td>+</td>
+        <td>Addition</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>Subtraction</td>
+      </tr>
+    <tr>
+      <td>*</td>
+      <td>Multiplication</td>
+    </tr>
+    <tr>
+      <td>**</td>
+      <td>Exponentiation</td>
+    </tr>
+    <tr>
+      <td>/</td>
+      <td>Division</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>Modulus</td>
+    </tr>
+    <tr>
+      <td>++</td>
+      <td>Increment</td>
+    </tr>
+    <tr>
+      <td>--</td>
+      <td>Decrement</td>
+    </tr>
     </table>
   </section>
 </body>
