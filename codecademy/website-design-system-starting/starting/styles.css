@@ -1,65 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&family=Roboto&display=swap');
+
+/*
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-size: 1.25em;
 }
 
 body {
-    width:  100vw;
+    width:  98vw;
 }
 
 h1 {
     color: hsl(302.26, 58.89%, 64.71%);
     text-align: center;
+    font-size: 3rem;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 h2 {
     color: hsl(280, 90%, 20%);
     text-align: center;
+    font-size: 2.75rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1.75rem;
 }
 
 .color {
     text-align: center;
-    width: 80%;
+    width: 90%;
     height: 25vh;
     margin: 0.5rem auto;
-    padding: 0.2rem;
+    padding: 0.25rem;
     border: 3px solid hsl(248.46, 39%, 39.22%);
 
-    display: grid;
-    grid-template-rows: 50px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "title"
-    "color1 color2 color3"
-    ;
-    column-gap: 0.1rem;
-    row-gap: 1rem;
+    display: flex;
+}
 
-}
-.color h3 {
-    grid-area: title;
-}
 .box {
-    width: 25%;
+    width: 33%;
     margin: 0 auto;
     border: 1px solid hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
 }
 
+.seal_brown {
+    background-color: hsl(0, 100%, 16.27%);   
+}
+
 .red {
     background-color: hsl(0, 100%, 50%);
-    grid-area: color2;
-}
+}    
 
 .sundown{
     background-color: hsl(0, 100%, 83.73%);
-    grid-area: color3;
-}
-
-.seal_brown {
-    background-color: hsl(0, 100%, 16.27%);
-    grid-area: color1;
 }
 
 .lime {
@@ -86,3 +103,25 @@ h2 {
     background-color: hsl(240, 100%, 83.73%);
 }
 
+.fonts {
+    width: 90%;
+    margin: 0 auto;
+
+    font-size: 2rem;
+    text-align: justify;
+}
+
+#roboto {
+    font-family: 'Roboto', sans-serif;
+    padding: 3rem 0;
+}
+
+#open {
+    font-family: 'Open Sans', sans-serif;
+    padding: 3rem 0;
+}
+
+#noto {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 3rem 0;
+}
