@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width:  100vw;
+}
+
+h1 {
+    color: hsl(302.26, 58.89%, 64.71%);
+    text-align: center;
+}
+
+h2 {
+    color: hsl(280, 90%, 20%);
+    text-align: center;
+}
+
+.color {
+    text-align: center;
+    width: 80%;
+    height: 25vh;
+    margin: 0.5rem auto;
+    padding: 0.2rem;
+    border: 3px solid hsl(248.46, 39%, 39.22%);
+
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "title"
+    "color1 color2 color3"
+    ;
+    column-gap: 0.1rem;
+    row-gap: 1rem;
+
+}
+.color h3 {
+    grid-area: title;
+}
+.box {
+    width: 25%;
+    margin: 0 auto;
+    border: 1px solid hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+}
+
+.red {
+    background-color: hsl(0, 100%, 50%);
+    grid-area: color2;
+}
+
+.sundown{
+    background-color: hsl(0, 100%, 83.73%);
+    grid-area: color3;
+}
+
+.seal_brown {
+    background-color: hsl(0, 100%, 16.27%);
+    grid-area: color1;
+}
+
+.lime {
+    background-color: hsl(120, 100%, 50%);
+}
+
+.mint_green {
+    background-color: hsl(120, 100%, 83.73%);
+}
+
+.green {
+    background-color: hsl(120, 100%, 16.27%);
+}
+
+.blue {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.navy{
+    background-color: hsl(240, 100%, 16.27%);
+}
+
+.perano {
+    background-color: hsl(240, 100%, 83.73%);
+}
+
