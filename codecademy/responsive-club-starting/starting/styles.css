@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.25rem;  /* tamanho padrão setado de 20px */
+}
+
+.content
+{
+    width: 98.250vw;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height:  5vh;
+    background-color: hsl(159.84, 100%, 74.9%);
+
+    position: fixed;
+    text-align: center;
+    padding: 0 auto;
+}
+
+.header li {
+    display: inline;
+}
+
+.main {
+    width: 100%;
+    overflow: hidden;
+    
+    background-color: hsl(327.57, 100%, 53.92%);
+}
+
+.main img {
+    width: 100%;
+    height: 95vh;
+}
+
+.main figcaption {
+    text-align: center;
+    font-size: 0.625em;
+    height: 5vh;
+    color: hsl(240, 100%, 16.27%);
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        display: none;
+    }
+}
