@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+:root {
+    --background-main: hsl(240, 98.04%, 20%);
+    --background-header: hsl(180, 100%, 50%);
+    --table-text: hsl(0, 0%, 100%);
+    --start-backgorund: hsl(15.58, 81.9%, 56.67%);
+    
+    font-size: 60%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100vh;
+}
+
+body{
+    background-color: var(--background-main);
+}
+
+.header {
+    background-color: var(--background-header);
+    text-align: center;
+}
+
+.title-row{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.instructions-title {
+    display: inline;
+    font-size: 1.8rem;
+    color: var(--background-header);
+    font-family: 'Work Sans';  
+}
+
+.instructions-row {
+    width: 40vw;
+    margin: 0 auto;
+}
+
+.instructions-number {
+    padding-right: 1.25rem;
+    font-family: 'Work-Sans';
+    font-size: 3rem;
+    color: var(--background-header);
+}
+
+.instructions-text {
+    padding: 1.5rem;
+    font-family: 'Work Sans';
+    font-size: 1.6rem;
+    color: var(--table-text);
+    text-align: justify;
+}
+
+.door-row {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.door-frame {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.start-row {
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 10%;
+    height: 4%;
+    font-family: 'Work Sans';    
+    background-color: var(--start-backgorund);
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--background-main);
+    margin-bottom: 0.15rem;
+    cursor: pointer;
+}
+
