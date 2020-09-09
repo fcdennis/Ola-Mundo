@@ -87,3 +87,27 @@ body{
     cursor: pointer;
 }
 
+#streakContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.streake {
+    flex: 1 1 150px;
+    flex: 0 1 150px;
+    margin: 5px;
+    border: 1px solid var(--table-text);    
+}
+
+.streake h1{
+    color: var(--start-backgorund);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.streake h2{
+    color:  var(--background-header);
+    text-align: center;
+    font-size: 5rem;
+}

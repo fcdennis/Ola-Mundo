@@ -9,6 +9,16 @@ const spaceDoorPath = "https://s3.amazonaws.com/codecademy-content/projects/chor
 
 const startButton = document.querySelector('#start');
 
+const currentStreak = document.querySelector('#currentStreake');
+const bestStreake = document.querySelector('#bestStreake');
+const overallStreake = document.querySelector('#overallStreake');
+
+let currentStreakScore = 0;
+let bestStreakeScore = 0;
+let overallStreakeScore = 0;
+
+
+let currentlyPlaying = true;
 
 let numClosedDoors = 3;
 let openDoor1;
@@ -22,9 +32,8 @@ const playDoor = (door) => {
     if(numClosedDoors === 0){
         gameOver('win');
     } else if (isBot(door) == true){
-        gameOver('lose');
+        gameOver();
     }
-
 }
 
 const isBot = (door) => {
@@ -43,7 +52,17 @@ const isClicked = (door) => {
 
 const gameOver = (status) =>{
     if ( status == 'win'){
+        if (currentStreakScore === bestStreakeScore){
+            bestStreakeScore++;
+        }
+        currentStreakScore++;
+        overallStreakeScore++;
         startButton.innerHTML = 'You win! Play again?';
+        currentlyPlaying = false;
+    } else {
+        startButton.innerHTML = 'Game over! Play again?'
+        currentlyPlaying = false;
+        currentStreakScore = 0;
     }
 }
 
@@ -84,24 +103,43 @@ const randomChoreDoorGenerator = () => {
 }
 
 doorImage1.onclick = () => {
-    if (isClicked(doorImage1)){
+    if (currentlyPlaying && isClicked(doorImage1)){
         doorImage1.src = openDoor1;
-        playDoor();
+        playDoor(doorImage1);
     }
 };
 
 doorImage2.onclick = () => {
-    if (isClicked(doorImage2)){
+    if (currentlyPlaying && isClicked(doorImage2)){
         doorImage2.src = openDoor2;
-        playDoor();
+        playDoor(doorImage2);
     }
 };
 
 doorImage3.onclick = () => {
-    if (isClicked(doorImage3)){
+    if (currentlyPlaying && isClicked(doorImage3)){
         doorImage3.src = openDoor3;
-        playDoor();
+        playDoor(doorImage3);
     }
 };
 
-randomChoreDoorGenerator();
+const startRound = () => {
+    doorImage1.src = closedDoorPath;
+    doorImage2.src = closedDoorPath;
+    doorImage3.src = closedDoorPath;
+    numClosedDoors = 3;
+    startButton.innerHTML = 'Good luck!';
+    currentlyPlaying = true;
+    currentStreak.innerHTML = currentStreakScore;
+    bestStreake.innerHTML = bestStreakeScore;
+    overallStreake.innerHTML = overallStreakeScore;
+    randomChoreDoorGenerator();
+}
+
+startButton.onclick = () =>{
+    if (!currentlyPlaying) {
+        startRound();
+    }
+}
+
+startRound();
